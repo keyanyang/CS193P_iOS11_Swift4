@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D51F5DE11FD6DBCA00130F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F5DE01FD6DBCA00130F9E /* AppDelegate.swift */; };
+		D51F5DE31FD6DBCA00130F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F5DE21FD6DBCA00130F9E /* ViewController.swift */; };
 		D51F5DE61FD6DBCA00130F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51F5DE41FD6DBCA00130F9E /* Main.storyboard */; };
 		D51F5DE81FD6DBCA00130F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51F5DE71FD6DBCA00130F9E /* Assets.xcassets */; };
 		D51F5DEB1FD6DBCA00130F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51F5DE91FD6DBCA00130F9E /* LaunchScreen.storyboard */; };
 		D54C12861FD7A7590084C90E /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C12851FD7A7590084C90E /* Concentration.swift */; };
 		D54C12881FD7A84A0084C90E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C12871FD7A84A0084C90E /* Card.swift */; };
-		D5F4E5291FD912180017BB8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4E5281FD912180017BB8C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D51F5DDD1FD6DBCA00130F9E /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51F5DE01FD6DBCA00130F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D51F5DE21FD6DBCA00130F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D51F5DE51FD6DBCA00130F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D51F5DE71FD6DBCA00130F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D51F5DEA1FD6DBCA00130F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D51F5DEC1FD6DBCA00130F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D54C12851FD7A7590084C90E /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		D54C12871FD7A84A0084C90E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		D5F4E5281FD912180017BB8C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,10 @@
 		D51F5DDF1FD6DBCA00130F9E /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				D5F4E5281FD912180017BB8C /* ViewController.swift */,
 				D54C12871FD7A84A0084C90E /* Card.swift */,
 				D54C12851FD7A7590084C90E /* Concentration.swift */,
 				D51F5DF21FD6DC5C00130F9E /* Supporting Files */,
+				D51F5DE21FD6DBCA00130F9E /* ViewController.swift */,
 				D51F5DE41FD6DBCA00130F9E /* Main.storyboard */,
 				D51F5DEC1FD6DBCA00130F9E /* Info.plist */,
 			);
@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					D51F5DDC1FD6DBCA00130F9E = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -150,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51F5DE31FD6DBCA00130F9E /* ViewController.swift in Sources */,
 				D51F5DE11FD6DBCA00130F9E /* AppDelegate.swift in Sources */,
 				D54C12861FD7A7590084C90E /* Concentration.swift in Sources */,
-				D5F4E5291FD912180017BB8C /* ViewController.swift in Sources */,
 				D54C12881FD7A84A0084C90E /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,9 +290,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q6EZ9JB6AK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Concentration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tempe.Concentration;
@@ -307,9 +306,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q6EZ9JB6AK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Concentration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tempe.Concentration;
